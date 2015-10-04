@@ -195,14 +195,15 @@ define(["require", "exports"], function (require, exports) {
 				[/\*.*$/, 'comment'],
 				[/\&\&.*$/, 'comment'],
             ],
-            string: [
+            // double quote strings "like this"
+			string: [
                 [/[^\\"]+/, 'string'],
                 [/@escapes/, 'string.escape'],
                 [/\\./, 'string.escape.invalid'],
                 [/"C?/, 'string', '@pop']
             ],
-            // single quote strings (also used for symbols)
-            // sstring.<kind>  where kind is 'sq' (single quote) or 's' (symbol)
+            // single quote strings 'like this'
+            // sstring.<kind>  where kind is 'sq' (single quote)
             sstring: [
                 [/[^\\']+/, 'string.$S2'],
                 [/\\\\|\\'|\\$/, 'string.$S2.escape'],
