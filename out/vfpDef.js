@@ -1,6 +1,8 @@
-/*---------------------------------------------------------
- * Copyright (C) Microsoft Corporation. All rights reserved.
- *--------------------------------------------------------*/
+// https://github.com/mattslay/Visual-FoxPro-language-template-for-Visual-Studio-Code
+// By Matt Slay 2015-10-04.
+
+// Version: 1.0.0 
+
 'use strict';
 define(["require", "exports"], function (require, exports) {
     exports.language = {
