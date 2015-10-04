@@ -5,7 +5,7 @@ Adding these language template files to your installation of Visual Studio Code 
 
 C:\Program Files (x86)\Microsoft VS Code\resources\app\plugins\vs.language.vfp
 
-![alt text](http://screencast.com/t/l7or5hJPrJ "screenshot")
+![alt text](http://content.screencast.com/users/MattSlay/folders/Snagit/media/221f580c-5a9f-4d35-9e6e-c140e54b8de7/10.04.2015-16.13.png "screenshot")
 
 ## VS Code Settings
 
