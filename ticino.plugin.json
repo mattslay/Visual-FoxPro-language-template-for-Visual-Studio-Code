@@ -1,0 +1,18 @@
+{
+	"pluginId": "vs.language.vfp",
+	"activationEvents": ["textModel:vfp"],
+	"mainModule": "./out/vfpMain",
+	"contributes": {
+		"language": [{
+			"id": "vfp",
+			"extensions": [ ".prg" ],
+			"aliases": [ "VFP", "Visual FoxPro", "FoxPro" ]
+		}]
+	},
+	"scripts": {
+		"compile": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../../gulpfile.plugins.js compile-plugin:vs.language.vfp"
+	},
+	"_bundling": [
+		{ "name": "./out/vfpMain" }
+	]
+}
