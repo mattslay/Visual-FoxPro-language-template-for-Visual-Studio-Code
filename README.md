@@ -12,7 +12,7 @@ C:\Program Files (x86)\Microsoft VS Code\resources\app\plugins\vs.language.vfp
 ###Background
 To create this language template package, I started with a copy of the Visual Basic .net language pack, and began to alter the settings to suit the VFP language. Thanks to Rick Strahl for pointing me to VB as the most likely template that would be easy to convert to VFP.
 
-## VS Code Settings
+### VS Code Settings
 
 You can add this **"files.exclude"** entry to your **settings.json** file to have VS Code ignore certain files in the left folder tree view. You can access this file in the File -> Preferences -> User Settings menu.
 
