@@ -5,7 +5,7 @@
 	"contributes": {
 		"language": [{
 			"id": "vfp",
-			"extensions": [ ".prg" ],
+			"extensions": [ ".prg", ".sc2", "vc2", "db2", "fr2" ],
 			"aliases": [ "VFP", "Visual FoxPro", "FoxPro" ]
 		}]
 	},
