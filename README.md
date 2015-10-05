@@ -12,7 +12,7 @@ C:\Program Files (x86)\Microsoft VS Code\resources\app\plugins\vs.language.vfp
 (Note: To create this language template package, I started with a copy of the Visual Basic .net language pack, and began to alter the setting to suit the VFP language. Thanks to Rick Strahl for pointing me to VB as the most likely template that would be easy to convert to VFP.)
 
 ###ToDo: 
-> The **tagwords** node of vfpDef.js still contains all the VB words. These will eventually be removed and will be replaced with the appropriate VFP words. I'm still trying to learn how VS Code treats the "keywords" differently than the "tagwords", and then I will clean this up.
+> The **keywords** node contains all the FoxPro keywords.  However, the **tagwords** node of vfpDef.js still contains all the original VB words that were in the original VB template. These will eventually be replaced with the appropriate VFP words. I'm still trying to learn how VS Code treats the "tagwords" differently than "keywords", and then I will clean this up.
 
 ### ToDo: 
 > The **tokenizer** node of vfpDef.js is still mostly from the VB template, so I am sure we will need some modifications here to truly maximize the VS Code experience/features when working with VFP code files.
