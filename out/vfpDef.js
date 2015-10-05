@@ -1,7 +1,7 @@
 // https://github.com/mattslay/Visual-FoxPro-language-template-for-Visual-Studio-Code
 // By Matt Slay 2015-10-04.
 
-// Version: 1.0.0 
+// Version: 1.0.1
 
 'use strict';
 define(["require", "exports"], function (require, exports) {
@@ -11,41 +11,25 @@ define(["require", "exports"], function (require, exports) {
         defaultToken: '',
         ignoreCase: true,
         brackets: [
-            { token: 'delimiter.bracket', open: '{', close: '}' },
+            // Original ones from VB template
+			{ token: 'delimiter.bracket', open: '{', close: '}' },
             { token: 'delimiter.array', open: '[', close: ']' },
             { token: 'delimiter.parenthesis', open: '(', close: ')' },
             { token: 'delimiter.angle', open: '<', close: '>' },
-            // Special bracket statement pairs
-            // according to https://msdn.microsoft.com/en-us/library/tsw2a11z.aspx
-            { token: 'keyword.tag-addhandler', open: 'addhandler', close: 'end addhandler' },
-            { token: 'keyword.tag-class', open: 'class', close: 'end class' },
-            { token: 'keyword.tag-enum', open: 'enum', close: 'end enum' },
-            { token: 'keyword.tag-event', open: 'event', close: 'end event' },
-            // { token: 'keyword.tag-function', open: 'function', close: 'end function' },
-            { token: 'keyword.tag-get', open: 'get', close: 'end get' },
-            // { token: 'keyword.tag-if', open: 'if', close: 'end if' },
-            { token: 'keyword.tag-interface', open: 'interface', close: 'end interface' },
-            { token: 'keyword.tag-module', open: 'module', close: 'end module' },
-            { token: 'keyword.tag-namespace', open: 'namespace', close: 'end namespace' },
-            { token: 'keyword.tag-operator', open: 'operator', close: 'end operator' },
-            { token: 'keyword.tag-property', open: 'property', close: 'end property' },
-            { token: 'keyword.tag-raiseevent', open: 'raiseevent', close: 'end raiseevent' },
-            { token: 'keyword.tag-removehandler', open: 'removehandler', close: 'end removehandler' },
-            { token: 'keyword.tag-select', open: 'select', close: 'end select' },
-            { token: 'keyword.tag-set', open: 'set', close: 'end set' },
-            { token: 'keyword.tag-structure', open: 'structure', close: 'end structure' },
-            { token: 'keyword.tag-sub', open: 'sub', close: 'end sub' },
-            { token: 'keyword.tag-synclock', open: 'synclock', close: 'end synclock' },
-            { token: 'keyword.tag-try', open: 'try', close: 'end try' },
-            { token: 'keyword.tag-while', open: 'while', close: 'end while' },
-            { token: 'keyword.tag-with', open: 'with', close: 'end with' },
-            // Other pairs
-            { token: 'keyword.tag-using', open: 'using', close: 'end using' },
-            { token: 'keyword.tag-do', open: 'do', close: 'loop' },
-            { token: 'keyword.tag-for', open: 'for', close: 'next' },
 			
-			{ token: 'keyword.tag-function', open: 'Procedure', close: 'EndProc' },
-			{ token: 'keyword.tag-if', open: 'If', close: 'EndIf' }
+			// These are added for VFP
+			{ token: 'keyword.tag-class', open: 'define', close: 'enddefine' },
+			{ token: 'keyword.tag-scan', open: 'scan', close: 'endscan' },
+			{ token: 'keyword.tag-procedure', open: 'procedure', close: 'endproc' },
+			{ token: 'keyword.tag-if', open: 'if', close: 'endif' },
+			{ token: 'keyword.tag-do', open: 'do', close: 'endcase' },
+			{ token: 'keyword.tag-do', open: 'do', close: 'enddo' },
+			{ token: 'keyword.tag-for', open: 'for', close: 'endfor' },
+			{ token: 'keyword.tag-scan', open: 'scan', close: 'endscan' },
+			{ token: 'keyword.tag-scan', open: 'scan', close: 'endscan' },
+			{ token: 'keyword.tag-text', open: 'text', close: 'endtext' },
+			{ token: 'keyword.tag-try', open: 'try', close: 'endtry' },
+			{ token: 'keyword.tag-with', open: 'with', close: 'endwith' },
 
 
         ],
@@ -54,13 +38,13 @@ define(["require", "exports"], function (require, exports) {
         blockCommentStart: '/*',
         blockCommentEnd: '*/',
         keywords: [
-				'abs','acla','aclass','acop','acopy','acos','acti','activate','adat','adatabases','adbo','adbobjects','add','addb','addbs','additive','addp','addproperty','adel','adir','adll','adlls','adoc','adockstate','aele','aelement','aerr','aerror',
+				'_tally','abs','acla','aclass','acop','acopy','acos','acti','activate','adat','adatabases','adbo','adbobjects','add','addb','addbs','additive','addp','addproperty','adel','adir','adll','adlls','adoc','adockstate','aele','aelement','aerr','aerror',
 				'aeve','aevents','afie','afields','afon','afont','after','agetc','agetclass','agetf','agetfileversion','ains','ainst','ainstance','alan','alanguage','alen','alia','alias','alias','alin','alines','all','allt','alltrim','alt','alte','alter',
 				'alternate','amem','amembers','american','amou','amouseobj','and','anet','anetresources','ansi','app','appe','append','apri','aprinters','apro','aprocinfo','arepltip','array','as','asc','asc','asca','ascan','ascending','asel','aselobj',
 				'ases','asessions','asin','asor','asort','asql','asqlhandles','asse','assert','asserts','asta','astackinfo','asub','asubscript','at','at','at_c','atag','ataginfo','atan','atc','atcc','atcl','atcline','atli','atline','ause','aused','auto',
 				'autoinc','autoincerror','automatic','autosave','avcx','avcxclasses','aver','average','avg','awidth','bar','bar','before','begi','begin','bell','betw','between','binary','bind','bindevent','bint','bintoc','bita','bitand','bitc','bitclear',
 				'bitl','bitlshift','bitn','bitnot','bito','bitor','bitr','bitrshift','bits','bitset','bitt','bittest','bitx','bitxor','blan','blank','blocksize','bof','bottom','british','brow','browse','browseime','buil','build','by','calc','calculate',
-				'canc','cancel','cand','candidate','candidate','caps','capslock','carry','cast','catc','catch','cd','cdow','cdx','cdx','ceil','ceiling','center','century','cga','chan','change','character','chdi','chdir','check','chr','chrs','chrsaw','chrt',
+				'canc','cancel','cand','candidate','candidate','caps','capslock','carry','case','cast','catc','catch','cd','cdow','cdx','cdx','ceil','ceiling','center','century','cga','chan','change','character','chdi','chdir','check','chr','chrs','chrsaw','chrt',
 				'chrtran','chrtranc','class','class','classlib','clea','clear','clearr','clearresultset','click','clock','clos','close','cmon','cmonth','cnt','cntb','cntbar','cntp','cntpad','codepage','collate','collection','color','column','coma','comarray',
 				'comc','comclassinfo','command','comp','comp','compact','compatible','compile','compobj','comprop','comr','comreturnerror','confirm','connection','connections','connstring','console','cont','continue','control','copy','cos','coun','count',
 				'count','coverage','cpco','cpcompile','cpconvert','cpcu','cpcurrent','cpdb','cpdbf','cpdialog','crea','create','create','createb','createbinary','createobject','createobjectex','createof','createoffline','csv','ctob','ctobin','ctod','ctot',
@@ -69,15 +53,15 @@ define(["require", "exports"], function (require, exports) {
 				'dderequest','ddes','ddesetoption','ddesets','ddesetservice','ddesett','ddesettopic','ddet','ddeterminate','deac','deactivate','debu','debug','debugo','debugout','decimals','decl','declare','defa','default','defaultext','defi','define',
 				'dele','dele','delete','deleted','deleted','deletetables','delimited','delimiters','desc','desc','descending','descending','development','device','dif','diff','difference','dime','dimension','dir','dire','directory','directory','disk',
 				'diskspace','disp','disp','display','displaypath','distinct','dll','dlls','dmy','dmy','do','dock','dode','dodefault','doev','doevents','dohistory','dos','dotip','double','dow','drag','driv','drivetype','drop','drop','dropoffline','dtoc',
-				'dtor','dtos','dtot','each','echo','edit','edit','editsource','ejec','eject','empt','empty','encrypt','end','endc','endcase','endde','enddefine','enddo','endfo','endfor','endfu','endfunc','endi','endif','endp','endpri','endprintjob','endproc',
-				'ends','endscan','endt','endtext','endtr','endtry','endw','enginebehavior','environment','eof','eras','erase','erro','erro','error','error','escape','eval','evaluate','event','eventhandler','eventlist','eventtracking','evl','exact',
+				'dtor','dtos','dtot','each','echo','edit','edit','editsource','ejec','eject','else','empt','empty','encrypt','end','endc','endcase','endde','enddefine','enddo','endfo','endfor','endfu','endfunc','endi','endif','endp','endpri','endprintjob','endproc',
+				'ends','endscan','endt','endtext','endtr','endtry','endw','endwith','enginebehavior','environment','eof','eras','erase','erro','erro','error','error','escape','eval','evaluate','event','eventhandler','eventlist','eventtracking','evl','exact',
 				'except','exclude','exclusive','exe','exec','execscript','exit','exp','expo','export','exte','extended','external','fchs','fchsize','fclo','fclose','fcou','fcount','fcre','fcreate','fdat','fdate','fdow','feof','ferr','ferror','fflu',
 				'fflush','fget','fgets','fiel','field','field','fields','file','file','files','filet','filetostr','fill','filt','filter','filter','fina','finally','fixed','fkla','fklabel','fkma','fkmax','flags','float','floc','flock','floo','floor',
 				'flus','flush','font','font','fontmetric','footer','fope','fopen','for','forc','force','forceext','forcep','forcepath','foreign','form','format','foun','found','foxplus','fput','fputs','frea','fread','free','freeze','french','from',
 				'fsee','fseek','fsiz','fsize','ftim','ftime','full','full','fullpath','fullpath','func','func','function','fv','fweek','fwri','fwrite','gath','gather','general','geta','getautoincvalue','getb','getbar','getc','getcolor','getcp',
 				'getcu','getcursoradapter','getd','getdir','gete','gete','getenv','getexpr','getf','getfile','getfl','getfldstate','getfo','getfont','geth','gethost','geti','getinterface','getn','getnextmodified','geto','getobject','getp','getpa',
 				'getpad','getpem','getpi','getpict','getpr','getprinter','getr','getresultset','getwordc','getwordcount','getwordn','getwordnum','go','gomo','gomonth','goto','group','grow','halfheight','having','head','header','heading','headings',
-				'help','helpfilter','hidd','hidden','hide','home','hour','hours','icas','icase','icon','id','id','idxc','idxcollate','iif','imes','imestatus','impl','implements','impo','import','in','include','indb','indbc','inde','inde','index',
+				'help','helpfilter','hidd','hidden','hide','home','hour','hours','icas','icase','icon','id','idxc','idxcollate','if','iif','imes','imestatus','impl','implements','impo','import','in','include','indb','indbc','inde','inde','index',
 				'indexes','indexseek','inke','inkey','inli','inlist','inner','inpu','inputbox','inse','insert','insm','insmode','int','into','isal','isalpha','isbl','isblank','isco','iscolor','isdi','isdigit','isex','isexclusive','isfl','isflocked',
 				'isho','ishosted','isle','isleadbyte','islo','islower','isme','ismemofetched','ismo','ismouse','isnu','isnull','ispe','ispen','isre','isreadonly','isrl','isrlocked','istr','istransactable','isup','isupper','italian','japan','join',
 				'justd','justdrive','juste','justext','justf','justfname','justp','justpath','justs','juststem','key','key','keyb','keyboard','keycomp','keym','keymatch','labe','label','last','last','lastkey','ledit','left','left','leftc','len',
@@ -88,7 +72,7 @@ define(["require", "exports"], function (require, exports) {
 				'negotiate','new','newo','newobject','newobject','next','nextvalue','noappend','nocaptions','noclear','noclose','noconsole','nocptrans','node','nodebug','nodefault','nodelete','nodialog','nodup','noedit','noenvironment',
 				'nofilter','nofloat','nogrow','noinit','nolgrid','nolink','nomargin','nomdi','nomenu','nominimize','nomodify','none','nooptimize','nooverwrite','nopageeject','noprompt','norefresh','norequery','noreset','norgrid','norm',
 				'norm','normal','normalize','nosave','noshow','not','note','notify','nowait','nowindow','nozoom','ntom','null','nulldisplay','numl','numlock','nvl','object','objects','objt','objtoclient','occu','occurs','odometer','of',
-				'off','oldv','oldval','oleobject','on','on','open','opendatatip','optimize','or','orde','order','order','os','othe','otherwise','pack','pad','pad','padc','padl','padr','page','palette','panel','para','para','parameters',
+				'off','oldv','oldval','oleobject','on','on','open','opendatatip','optimize','or','orde','order','order','os','othe','otherwise','outer','pack','pad','pad','padc','padl','padr','page','palette','panel','para','para','parameters',
 				'parameters','partition','password','path','paym','payment','pcol','pcou','pcount','pdox','pdsetup','pems','pemstatus','percent','pi','pictres','picture','pixels','plain','play','point','pop','popu','popup','popup','popups',
 				'position','preference','pretext','preview','prim','primary','primary','prin','prin','printer','printjob','printstatus','priv','private','prmb','prmbar','prmp','prmpad','proc','procedure','production','prog','program','project','prom','prompt',
 				'prompt','prop','proper','prot','protected','prow','prti','prtinfo','publ','public','push','putf','putfile','pv','quar','quarter','query','quit','rais','raiseevent','rand','range','rat','ratc','ratl','ratline','rd','read',
@@ -101,17 +85,17 @@ define(["require", "exports"], function (require, exports) {
 				'sqli','sqlidledisconnect','sqlm','sqlmoreresults','sqlp','sqlprepare','sqlr','sqlrollback','sqlse','sqlsetprop','sqlst','sqlstringconnect','sqlt','sqltables','sqrt','srow','srows','status','step','stor','store','str',
 				'strc','strconv','stre','strextract','strictdate','strto','strtofile','strtr','strtran','structure','stuf','stuff','stuffc','style','subs','substr','substrc','sum','sum','summary','susp','suspend','sylk','sys','sysformats',
 				'sysm','sysmenu','sysmetric','system','tab','table','tabler','tablerevert','tables','tableu','tableupdate','tablevalidate','tag','tag','tagc','tagcount','tagn','tagno','taiwan','talk','tan','targ','target','text','textmerge',
-				'textmerge','thro','throw','time','time','timeout','title','to','top','topic','tota','total','tran','transaction','transform','trbetween','trigger','trim','try','ttoc','ttod','txnl','txnlevel','txtw','txtwidth','type','type',
+				'textmerge','this','thisform','thro','throw','time','time','timeout','title','to','top','topic','tota','total','tran','transaction','transform','trbetween','trigger','trim','try','ttoc','ttod','txnl','txnlevel','txtw','txtwidth','type','type',
 				'typeahead','udfparms','unbi','unbindevents','union','unique','unlo','unlock','upda','update','uppe','upper','usa','use','used','userid','usetip','val','vali','valid','validate','value','values','varcharmapping','vart',
 				'vartype','vers','version','view','views','wait','wbor','wborder','wchi','wchild','wcol','wcols','wdoc','wdockable','week','wexi','wexist','wfon','wfont','when','where','while','window','windows','wks','wlas','wlast','wlco',
 				'wlcol','wlro','wlrow','wmax','wmaximum','wmin','wminimum','wont','wontop','wout','woutput','wpar','wparent','wrap','wrk','wrow','wrows','wtit','wtitle','wvis','wvisible','xls','xmlt','xmltocursor','xmlu','xmlupdategram',
 				'year','ymd','zap','zoom'
 			],
         tagwords: [
-            'If', 'Sub', 'Select', 'Try', 'Class', 'Enum',
-            'Function', 'Get', 'Interface', 'Module', 'Namespace', 'Operator', 'Set', 'Structure', 'Using', 'While', 'With',
-            'Do', 'Loop', 'For', 'Next', 'Property', 'Continue', 'AddHandler', 'RemoveHandler', 'Event', 'RaiseEvent', 'SyncLock',
-			'proc','procedure'
+            //'If', 'Sub', 'Select', 'Try', 'Class', 'Enum',
+            //'Function', 'Get', 'Interface', 'Module', 'Namespace', 'Operator', 'Set', 'Structure', 'Using', 'While', 'With',
+            //'Loop', 'For', 'Next', 'Property', 'Continue', 'AddHandler', 'RemoveHandler', 'Event', 'RaiseEvent', 'SyncLock',
+			'define', 'do', 'if', 'for', 'proc', 'procedure', 'text', 'try', 'scan', 'with'
         ],
         // we include these common regular expressions
         symbols: /[=><!~?;\.,:&|+\-*\/\^%]+/,
@@ -123,11 +107,14 @@ define(["require", "exports"], function (require, exports) {
             root: [
                 // whitespace
                 { include: '@whitespace' },
-                // special ending tag-words
-                [/next(?!\w)/, { token: 'keyword.tag-for', bracket: '@close' }],
-                [/loop(?!\w)/, { token: 'keyword.tag-do', bracket: '@close' }],
-                // usual ending tags
-                [/end\s+(?!for|do)([a-zA-Z_]\w*)/, { token: 'keyword.tag-$1', bracket: '@close' }],
+                [/endcase/, { token: 'keyword.tag-do', bracket: '@close' }],
+                [/enddefine/, { token: 'keyword.tag-define', bracket: '@close' }],
+                [/enddo/, { token: 'keyword.tag-do', bracket: '@close' }],
+                [/endif/, { token: 'keyword.tag-if', bracket: '@close' }],
+                [/endfor/, { token: 'keyword.tag-for', bracket: '@close' }],
+                [/endproc/, { token: 'keyword.tag-procedure', bracket: '@close' }],
+                [/endtry/, { token: 'keyword.tag-try', bracket: '@close' }],
+                [/endwith/, { token: 'keyword.tag-with', bracket: '@close' }],
                 // identifiers, tagwords, and keywords
                 [/[a-zA-Z_]\w*/, { cases: { '@tagwords': { token: 'keyword.tag-$0', bracket: '@open' },
                             '@keywords': { token: 'keyword.$0' },
@@ -148,9 +135,9 @@ define(["require", "exports"], function (require, exports) {
                 [/@symbols/, 'delimiter'],
                 // strings
                 [/"([^"\\]|\\.)*$/, 'string.invalid'],
-                [/"/, 'string', '@string'],
-                [/'/, { token: 'string.sq.delim', bracket: '@open', next: '@sstring.sq' }],
-                [/\[/, { token: 'string.b.delim', bracket: '@open', next: '@bstring.b' }],
+                [/"/, 'string', '@string'],													// double quote
+                [/'/, { token: 'string.sq.delim', bracket: '@open', next: '@sstring.sq' }], // single quote
+                [/\[/, { token: 'string.b.delim', bracket: '@open', next: '@bstring.b' }],  // bracket
             ],
             whitespace: [
                 [/[ \t\r\n]+/, ''],
