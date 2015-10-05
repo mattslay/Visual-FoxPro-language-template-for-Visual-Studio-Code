@@ -6,7 +6,7 @@ Copy the files from this repo into to the path below on your machine (You will n
 
 C:\Program Files (x86)\Microsoft VS Code\resources\app\plugins\vs.language.vfp
 
-![alt text](http://content.screencast.com/users/MattSlay/folders/Snagit/media/2c68d695-a94e-48a7-ab57-bfaff421470e/10.04.2015-17.03.png "screenshot")
+![alt text](http://www.screencast.com/users/MattSlay/folders/Snagit/media/dcc3ac0a-9cd3-4437-964d-d00eb9cb0d5f "screenshot")
 
 
 ###Background
