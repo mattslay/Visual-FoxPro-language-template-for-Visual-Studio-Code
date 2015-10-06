@@ -113,6 +113,7 @@ define(["require", "exports"], function (require, exports) {
                 [/endif/, { token: 'keyword.tag-if', bracket: '@close' }],
                 [/endfor/, { token: 'keyword.tag-for', bracket: '@close' }],
                 [/endproc/, { token: 'keyword.tag-procedure', bracket: '@close' }],
+                [/endtext/, { token: 'keyword.tag-text', bracket: '@close' }],
                 [/endtry/, { token: 'keyword.tag-try', bracket: '@close' }],
                 [/endwith/, { token: 'keyword.tag-with', bracket: '@close' }],
                 // identifiers, tagwords, and keywords
