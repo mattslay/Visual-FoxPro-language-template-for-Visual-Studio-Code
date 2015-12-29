@@ -1,0 +1,26 @@
+{
+	"name": "FoxPro",
+	"displayName": "FoxPro",
+	"description": "Visual FoxPro",
+	"version": "0.0.1",
+	"publisher": "MattSlay",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "foxpro",
+			"aliases": ["foxpro", "Visual FoxPro", "VFP"],
+			"extensions": [".prg", ".PRG"],
+			"configuration": "./foxpro.configuration.json"
+		}],
+		"grammars": [{
+			"language": "foxpro",
+			"scopeName": ".foxpro",
+			"path": "./syntaxes/foxpro.plist"
+		}]
+	}
+}
