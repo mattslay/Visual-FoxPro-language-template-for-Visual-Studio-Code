@@ -4,9 +4,9 @@ This language template bring syntax coloring and language support for Visual Fox
 ##Installation - Installing Extensions
 VS Code looks for extensions under your user folder in the .vscode/extensions folder. Depending on your platform it is located:
 
-Windows %USERPROFILE%\.vscode\extensions
-Mac $HOME/.vscode/extensions
-Linux $HOME/.vscode/extensions
+- Windows %USERPROFILE%\.vscode\extensions
+- Mac $HOME/.vscode/extensions
+- Linux $HOME/.vscode/extensions
 
 So, copy the folder in this source code into your user folder under .vscode/extensions.  The final folder structure (on a Windows machine) will be:
 c:\<<UserProfile>>\.vscode\extensoins\foxpro
