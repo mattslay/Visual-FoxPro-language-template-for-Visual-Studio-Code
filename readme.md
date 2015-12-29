@@ -9,7 +9,7 @@ VS Code looks for extensions under your user folder in the .vscode/extensions fo
 - Linux $HOME/.vscode/extensions
 
 So, copy the folder in this source code into your user folder under .vscode/extensions.  The final folder structure (on a Windows machine) will be something like:
-- c:\Users\UserName\.vscode\extensoins\foxpro
+- c:\Users\UserName\\.vscode\extensoins\foxpro
 
 ![alt text](http://content.screencast.com/users/MattSlay/folders/Snagit/media/dcc3ac0a-9cd3-4437-964d-d00eb9cb0d5f/10.04.2015-23.50.png "screenshot")
 
