@@ -1,5 +1,5 @@
 # A language template for Visual FoxPro code files in Visual Studio Code
-This language template bring syntax coloring and language support for Visual FoxPro PRG code files to the VS Code editor.
+This language template brings syntax coloring and language support for Visual FoxPro PRG code files to the Visual Studio Code editor.
 
 ##Installation - Installing Extensions
 VS Code looks for extensions under your user folder in the .vscode/extensions folder. Depending on your platform it is located:
@@ -8,7 +8,7 @@ VS Code looks for extensions under your user folder in the .vscode/extensions fo
 - Mac $HOME/.vscode/extensions
 - Linux $HOME/.vscode/extensions
 
-So, copy the folder in this source code into your user folder under .vscode/extensions.  The final folder structure (on a Windows machine) will be something like:
+So, copy the "foxpro" folder in this source code into your user folder under .vscode/extensions.  The final folder structure (on a Windows machine) will be something like:
 - C:\Users\UserName\\.vscode\extensoins\foxpro
 
 ![alt text](http://content.screencast.com/users/MattSlay/folders/Snagit/media/dcc3ac0a-9cd3-4437-964d-d00eb9cb0d5f/10.04.2015-23.50.png "screenshot")
