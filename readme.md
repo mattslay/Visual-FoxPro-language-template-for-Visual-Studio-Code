@@ -2,9 +2,7 @@
 This language template brings syntax coloring and language support for Visual FoxPro PRG code files to the Visual Studio Code editor.
 
 ---
-Update 2016-04-04: Someone else has made a VFP syntax colorizing tool for VFP Code, and it may well be better than mine here, so please check out theirs and support them.  
-
-See it here: [link] (https://github.com/FrancisFaure/vfp_tmlanguage_generator)
+Update 2016-04-04: Someone else has made a VFP syntax colorizing tool for VFP Code, and it may well be better than mine here, so please check out theirs and support them.  See it here: [link] (https://github.com/FrancisFaure/vfp_tmlanguage_generator)
 ---
 
 
