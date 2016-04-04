@@ -3,9 +3,9 @@ This language template brings syntax coloring and language support for Visual Fo
 
 ---
 Update 2016-04-04: Someone else has made a VFP syntax colorizing tool for VFP Code, and it may well be better than mine here, so please check out theirs and support them.  See it here: 
-[link] (https://github.com/FrancisFaure/vfp_tmlanguage_generator)
----
+[https://github.com/FrancisFaure/vfp_tmlanguage_generator] (https://github.com/FrancisFaure/vfp_tmlanguage_generator)
 
+---
 
 ##Installation - Installing Extensions
 VS Code looks for extensions under your user folder in the .vscode/extensions folder. Depending on your platform it is located:
