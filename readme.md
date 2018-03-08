@@ -6,7 +6,7 @@ This language template brings syntax coloring and language support for Visual Fo
 ## Installation
 Installing Extensions: VS Code looks for extensions under your user folder in the .vscode/extensions folder. Depending on your platform it is located:
 
-- Windows %USERPROFILE%\.vscode\extensions
+- Windows %USERPROFILE%\\.vscode\extensions
 - Mac $HOME/.vscode/extensions
 - Linux $HOME/.vscode/extensions
 
