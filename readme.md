@@ -13,7 +13,7 @@ Installing Extensions: VS Code looks for extensions under your user folder in th
 So, copy the "foxpro" folder in this source code into your user folder under .vscode/extensions.  The final folder structure (on a Windows machine) will be something like:
 - C:\Users\UserName\\.vscode\extensoins\foxpro
 
-![alt text](http://content.screencast.com/users/MattSlay/folders/Snagit/media/dcc3ac0a-9cd3-4437-964d-d00eb9cb0d5f/10.04.2015-23.50.png "screenshot")
+![alt text](http://www.screencast.com/users/MattSlay/folders/Snagit/media/354acc1a-ff2b-4514-84d0-3c47b2d7e250 "screenshot")
 
 
 ### Background
