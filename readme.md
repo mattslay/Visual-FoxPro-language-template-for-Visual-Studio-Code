@@ -7,9 +7,9 @@ This language template brings syntax coloring and language support for Visual Fo
 ## Easy Install from VS Code Marketplace
 You can install this extension in VS Code right from the Extensions bar in the IDE. Just click on Extensions, then search for "FoxPro" and you can install with one click. (Credit to @newdatasystems for adding this extension to the Marketplace https://github.com/newdatasystems)
 
-If you install from the Marketplace, you will alse get the collection of Snippets which have several Snippets that generate code when you type a snippet Keyword. Look in the "Snippets" folder and you can learn how it works, and it's really easy to add your owns snippet templates once you see the required pattern.
+If you install from the Marketplace, you will also get the collection of Snippets which have several Snippets that generate code when you type a snippet Keyword. Look in the "Snippets" folder and you can learn how it works, and it's really easy to add your owns snippet templates once you see the required pattern.
 
-You can see it in the Marketplace at this url: https://marketplace.visualstudio.com/items?itemName=NewDataSystems.foxpro
+You can documentation of the extension in the Marketplace at this url: https://marketplace.visualstudio.com/items?itemName=NewDataSystems.foxpro
 
 ## Manual Install
 
