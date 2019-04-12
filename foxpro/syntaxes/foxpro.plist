@@ -24,7 +24,7 @@
 			<key>include</key>
 			<string>#round-brackets</string>
 		</dict>
-		<dict>
+<!-- 		<dict>
 			<key>begin</key>
 			<string>^(?=\t)</string>
 			<key>end</key>
@@ -79,7 +79,7 @@
 					<string>(  )(  )?</string>
 				</dict>
 			</array>
-		</dict>
+		</dict> -->
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -116,7 +116,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^[ \t]+)?(?=\*)</string>
+			<string>^(\s*)(?=\*)</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -347,15 +347,30 @@
 			</dict>
 			<key>name</key>
 			<string>string.quoted.double.foxpro</string>
-			<key>patterns</key>
-			<array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(\[)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
 				<dict>
-					<key>match</key>
-					<string>('')</string>
 					<key>name</key>
-					<string>constant.character.escape.apostrophe.foxpro</string>
+					<string>punctuation.definition.string.begin.foxpro</string>
 				</dict>
-			</array>
+			</dict>
+			<key>end</key>
+			<string>(\])</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.foxpro</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.bracket.foxpro</string>
 		</dict>
 
 		
@@ -463,7 +478,7 @@
 			<key>match</key>
 			<string>!|\$|%|&amp;|\*|\-\-|\-|\+\+|\+|~|===|==|=|!=|!==|&lt;=|&gt;=|&lt;&lt;=|&gt;&gt;=|&gt;&gt;&gt;=|&lt;&gt;|&lt;|&gt;|!|&amp;&amp;|\|\||\?\:|\*=|/=|%=|\+=|\-=|&amp;=|\^=|\b(in|instanceof|new|delete|typeof|void)\b</string>
 			<key>name</key>
-			<string>keyword.operator.js</string>
+			<string>keyword.operator.foxpro</string>
 		</dict>
 	</array>
 	<key>repository</key>
