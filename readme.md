@@ -4,8 +4,14 @@ This language template brings syntax coloring and language support for Visual Fo
 ---
 ## Updated version as of 2019-04-12 with many new fixes!
 
-## Installation
-Installing Extensions: VS Code looks for extensions under your user folder in the .vscode/extensions folder. Depending on your platform it is located:
+## Easy Install from VS Code Marketplace
+You can install this extension in VS Code right from the Extensions bar in the IDE. Just click on Extensions, then search for "FoxPro" and you can install with one click. (Credit to @newdatasystems for adding this extension to the Marketplace https://github.com/newdatasystems)
+
+You can see it in the Marketplace at this url: https://marketplace.visualstudio.com/items?itemName=NewDataSystems.foxpro
+
+## Manual Install
+
+If you really want to go for a low-level, manual install, here's what you need to know: VS Code looks for extensions under your user folder in the .vscode/extensions folder. Depending on your platform it is located:
 
 - Windows %USERPROFILE%\\.vscode\extensions
 - Mac $HOME/.vscode/extensions
