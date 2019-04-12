@@ -24,6 +24,9 @@ So, copy the "foxpro" folder in this source code into your user folder under .vs
 
 ![alt text](http://content.screencast.com/users/MattSlay/folders/Snagit/media/354acc1a-ff2b-4514-84d0-3c47b2d7e250/04.01.2019-14.14.png "screenshot")
 
+## Code Folding / Code Collapse feature is supported!
+
+![alt text](https://cloud.githubusercontent.com/assets/309016/20973151/31e04362-bc5d-11e6-8f58-008004b081ea.png "code-folding")
 
 ### Background
 To create this language template package, I started with a copy of the Visual Basic .net language pack, and began to alter the settings to suit the VFP language. Thanks to Rick Strahl for pointing me to VB as the most likely template that would be easy to convert to VFP.
