@@ -182,7 +182,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\b(If|Else|EndIf|Do|While|EndDo|For|To|Each|Case|Select|Return|Continue|Loop|Next|With|EndWith|Exit|IIf|Try|Catch|EndTry)\b)</string>
+			<string>(?i:\b(If|Else|EndIf|Do|While|EndDo|For|To|Each|Case|Return|Continue|Loop|Next|With|EndWith|Exit|IIf|Try|Catch|EndTry|Endfor)\b)</string>
 			<key>name</key>
 			<string>keyword.control.foxpro</string>
 		</dict>
@@ -207,7 +207,7 @@
 							ends|endscan|endt|endtext|endtr|endtry|endw|endwith|enginebehavior|environment|eof|eras|erase|erro|erro|error|error|escape|eval|evaluate|event|eventhandler|eventlist|eventtracking|evl|exact|
 							except|exclude|exclusive|exe|exec|execscript|exit|exp|expo|export|exte|extended|external|fchs|fchsize|fclo|fclose|fcou|fcount|fcre|fcreate|fdat|fdate|fdow|feof|ferr|ferror|fflu|
 							fflush|fget|fgets|fiel|field|field|fields|file|file|files|filet|filetostr|fill|filt|filter|filter|fina|finally|fixed|fkla|fklabel|fkma|fkmax|flags|float|floc|flock|floo|floor|
-							flus|flush|font|font|fontmetric|footer|fope|fopen|for|forc|force|forceext|forcep|forcepath|foreign|form|format|foun|found|foxplus|fput|fputs|frea|fread|free|freeze|french|from|
+							flus|flush|font|font|fontmetric|footer|fope|fopen|forc|force|forceext|forcep|forcepath|foreign|form|format|foun|found|foxplus|fput|fputs|frea|fread|free|freeze|french|from|
 							fsee|fseek|fsiz|fsize|ftim|ftime|full|full|fullpath|fullpath|func|func|function|fv|fweek|fwri|fwrite|gath|gather|general|geta|getautoincvalue|getb|getbar|getc|getcolor|getcp|
 							getcu|getcursoradapter|getd|getdir|gete|gete|getenv|getexpr|getf|getfile|getfl|getfldstate|getfo|getfont|geth|gethost|geti|getinterface|getn|getnextmodified|geto|getobject|getp|getpa|
 							getpad|getpem|getpi|getpict|getpr|getprinter|getr|getresultset|getwordc|getwordcount|getwordn|getwordnum|go|gomo|gomonth|goto|group|grow|halfheight|having|head|header|heading|headings|
@@ -287,7 +287,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i:\s*\b(Empty|False|Nothing|Null|True|.t.|.f.|.null.)\b)</string>
+			<string>(?i:\s*\b(Empty|False|Nothing|Null|True)\b|(\.t\.|\.f\.|\.null\.))</string>
 			<key>name</key>
 			<string>constant.language.foxpro</string>
 		</dict>
